@@ -1,0 +1,53 @@
+.text-box {
+    padding: 2em;
+}
+
+resize {
+  max-width:75%;
+  max-height:75%;
+}
+
+.feature_center {
+  float: left;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.i_frames {
+  width: 400px;
+  height: 400px;
+  float: right;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+    float: left;
+    width: 50%;
+    padding: 5px;
+  }
+    /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 750px) {
+    .column {
+      width: 100%;
+    }
+  }
+  
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+ .table_class {
+   padding: 23pt;
+ }
+

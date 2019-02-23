@@ -1,0 +1,43 @@
+.btn-group {
+    border: #292392;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.page_header {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #eef3a7;
+    font-size: 40pt;
+}
+.container-fluid{
+    background-color: #2235a3;
+    border-color: #111e68;
+    font-size: 14pt;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.navbar-brand{
+    font-size: 20pt;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+}
+.h1{
+    background-color: #cfcfcf;
+    font-size: 22pt;
+    border: 3%;
+    padding: 2%;
+    color: #050d3a;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.summary{
+    background-color: #cfcfcf;
+    font-size: 16pt;
+    border: 3%;
+    padding: 2%;
+    color: #050d3a;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.images{
+    background-color: white
+}
+
+
+@media (max-width: 480px)

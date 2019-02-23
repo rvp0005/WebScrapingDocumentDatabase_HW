@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mars Fun Facts!</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bootstrap_style2.css">
+  <link rel="stylesheet" href="style2.css">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <div class="container-fluid">
+  <div class="text-center">
+  <div class="jumbotron text-center">
+    <h1>Learn about Mars!</h1>
+    <p>Fun Facts, Weather, Hemispheres & More! </p>
+    <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Get Data!</a></p>
+  </div></div></div>
+
+  <div class ="container">
+    <div class="row">
+    <div class="text-center"><h1>Featured Image & Fun Facts </h1></br></div></div></div>
+
+  <div class ="container">
+  <div class = 'row'>
+  <div class = "col-md-8">
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="{{ data.featured_img }}" alt="Card image cap">
+    </div></div>
+    <div class = "col-md-2">        
+            <iframe  src= "mars_facts.html" width= 400px, height= 300px ></iframe></div></div></div>
+  </div></div>
+
+  <div class = "text-center"> 
+  <div class = "row">
+    <h1>Weather</h1></div>
+  <div class = "row">
+    <h4>According to Mars Curiosity, the current weather on Mars is: {{data.weather}}</h4></div></div>
+    
+    <div class = "text-center">
+    <div class = "row">
+    <h1> Latest Mars News: "{{data.news_headline}}"</h1></div>
+    <div class = "row">
+    <h4>{{data.news_text}}</h4></div></div></div>
+
+    <div class ="container">
+        <div class="row">
+            <div class="text-center"><h1>Mars Hemispheres</h1></br></div></div>
+        <div class = "row">
+            <div class="column">
+                <div class="images">
+                    <img src="{{data.Mars_hemispheres[0]}}" alt="Mars_hemispheres" style = "width: 100%"/></div></div>
+            <div class="column">
+                <div class="images">
+                    <img src="{{data.Mars_hemispheres[1]}}" alt="Mars_hemispheres" style = "width: 100%"/></div></div>
+        </div>
+        <div class = "row">
+            <div class="column">
+                <div class="images">
+                    <img src="{{data.Mars_hemispheres[2]}}" alt="Mars_hemispheres" style = "width: 100%"/></div></div>
+            <div class="column">
+                <div class="images">
+                    <img src="{{data.Mars_hemispheres[3]}}"  alt="Mars_hemispheres" style = "width: 100%"/></div></div>
+            </div>
+
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>
+
+
